@@ -1,13 +1,91 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-weight: 500 !important;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div {
+  display: block;
+  unicode-bidi: isolate;
 }
+
+.bgcolor{
+  background-color:  #1e1b1bf8;
+}
+
+.textcolor{
+        
+  color: rgb(220, 173, 5);
+}
+
+.instaffect{
+                                     
+  transition: color 0.3s, box-shadow 0.3s;
+   color:#1e1b1bf8;
+   border: rgb(255, 200, 0) 4px solid ;
+  
+}
+
+.instaffect:hover{
+
+    
+   transform: scale(1.02);
+   border: #f80269 4px solid ;
+   box-shadow: 0 0  10px   #f80269 ;
+    
+}
+
+.instaffect:hover .instaffect2 {
+color: #f80269; 
+filter: drop-shadow(0 0 8px #f8026959);
+}
+
+.shadoweffect{
+                                     
+  transition: color 0.3s, box-shadow 0.3s;
+   color:#1e1b1bf8;
+   border: rgb(255, 200, 0) 4px solid ;
+  
+}
+
+.shadoweffect:hover{
+
+    
+   transform: scale(1.02);
+   border: #25D366 4px solid ;
+   box-shadow: 0 0  10px   #25D366 ;
+    
+}
+
+.shadoweffect:hover .shadoweffect2 {
+color: #25D366; 
+filter: drop-shadow(0 0 8px rgba(17, 249, 17, 0.358));
+}
+
+.linkffect{
+                                     
+  transition: color 0.3s, box-shadow 0.3s;
+   color:#1e1b1bf8;
+   /* border: rgb(255, 200, 0) 4px solid ; */
+  
+}
+
+.linkffect:hover{
+
+    
+   transform: scale(1.02);
+   color: #2033fb; 
+filter: drop-shadow(0 0 8px #2032fb3e);
+   box-shadow: 0 0  10px   #2033fb ;
+    
+}
+
+/* .linkffect:hover  {
+color: #2033fb; 
+filter: drop-shadow(0 0 8px #2032fb3e);
+} */
